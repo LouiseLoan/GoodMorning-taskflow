@@ -1,34 +1,41 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
+# ===== ANDROID =====
 *.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
+# ===== FICHIERS SENSIBLES =====
+local.properties
 google-services.json
+# Note : commite google-services.json seulement si le repo est PRIVÉ
+# Pour un repo public, utilise des secrets CI/CD à la place
 
-# Android Profiling
-*.hprof
+# ===== CLAUDE CODE — config personnelle =====
+CLAUDE.md
+.claude/
+
+# ===== BMAD — outputs générés =====
+bmad/outputs/
+bmad/context/.session_*
+
+# ===== KOTLIN / JVM =====
+*.class
+*.jar
+*.war
+*.aar
+bin/
+gen/
+out/
+
+# ===== DIVERS =====
+*.log
+*.tmp
+.env
+.env.*
